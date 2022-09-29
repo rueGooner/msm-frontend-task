@@ -1,0 +1,46 @@
+$primary-color: white;
+$bg: black;
+
+$grey: #f7f5f9;
+$color-primary: #a48db6;
+
+$desktop-max-width-px: 1200px;
+
+@function spacing($size) {
+  @return $size * 4px;
+}
+
+h1 {
+  color: $primary-color;
+  background-color: $bg;
+}
+
+body {
+  background-color: $grey;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.page {
+  max-width: $desktop-max-width-px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+
+  th,
+  td {
+    border: none;
+    padding: spacing(1);
+  }
+
+  th {
+    background-color: $color-primary;
+    color: white;
+  }
+}
+
+.numeric {
+  text-align: right;
+}
